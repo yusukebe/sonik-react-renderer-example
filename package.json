@@ -9,7 +9,7 @@
     "deploy": "$npm_execpath build && wrangler pages deploy ./dist"
   },
   "dependencies": {
-    "@hono/react-renderer": "./hono-react-renderer-0.0.0.tgz",
+    "@hono/react-renderer": "^0.0.1",
     "@hono/vite-dev-server": "^0.0.7",
     "hono": "^3.11.7",
     "react": "^18.2.0",
