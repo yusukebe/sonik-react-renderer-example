@@ -1,11 +1,11 @@
-import { factory } from '../factory'
+import { createHandlers } from '../factory'
 import Counter from '../islands/counter'
 
-export default factory.createHandlers((c) => {
+export default createHandlers((c) => {
   return c.render(
     <div>
       <h2>
-        Hello <a href='/about/me'>me</a>!
+        Hello <a href="/about/me">me</a>!
       </h2>
       <Counter />
     </div>

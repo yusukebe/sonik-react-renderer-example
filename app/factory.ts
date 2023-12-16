@@ -1,3 +1,10 @@
 import { createFactory } from 'hono/factory'
 
-export const factory = createFactory()
+type Env = {
+  Variables: {
+    foo: string
+  }
+}
+
+export const factory = createFactory<Env>()
+export const createHandlers = factory.createHandlers
