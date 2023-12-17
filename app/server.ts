@@ -1,7 +1,10 @@
 import { createApp } from 'sonik/server'
 import { serveStatic } from 'hono/cloudflare-pages'
+import { Hono } from 'hono'
 
-const app = createApp()
+const app = new Hono()
 app.use('/static/*', serveStatic())
 
-export default app
+export default createApp({
+  app
+})

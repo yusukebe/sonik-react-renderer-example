@@ -4,5 +4,5 @@ import { createClient } from 'sonik/client'
 
 createClient({
   hydrate: (elem, root) => hydrateRoot(root, elem),
-  createElement,
+  createElement
 })

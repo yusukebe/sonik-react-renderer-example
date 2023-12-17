@@ -7,10 +7,11 @@ export default defineConfig(({ mode }) => {
     return {
       build: {
         rollupOptions: {
-          input: './app/client.ts',
+          input: ['./app/client.ts', '/app/style.css'],
           output: {
             dir: './dist/static',
-            entryFileNames: 'client.js'
+            entryFileNames: 'client.js',
+            assetFileNames: `assets/[name].[ext]`
           }
         },
         emptyOutDir: false,
